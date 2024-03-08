@@ -2,10 +2,12 @@ import React from 'react';
 
 const Title = ({ setActivePage }) => {
   return (
-    <div>
+    <div className="container">
       <h1 className='title1'>スポイト<br />カレンダー</h1>
-      <img className='title2' src="./rogo.png" alt="sample" width="100px" />
-      <button className='title3' onClick={() => setActivePage('main')}>スタート</button>
+      <img className='title2' src="./logo.png" alt="ロゴ" />
+      <button type="button" className="btn btn-outline-primary title3" onClick={() => setActivePage('main')}>
+        start!
+      </button>
     </div>
   );
 };

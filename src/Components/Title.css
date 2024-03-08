@@ -1,22 +1,43 @@
-.title1 {
-  position: fixed;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+/* CSSファイル */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
   text-align: center;
+  background: linear-gradient(to right, #c1d6f4, #a1ebff); /* やわらかなクリームピンクのグラデーション */
+
+
+
 }
+
+.title1 {
+  margin-bottom: 2rem;
+  font-size: 3rem; /* フォントサイズを調整 */
+  color: #333; /* 読みやすい色に */
+  font-family: 'Pacifico', cursive;
+}
+
 
 .title2 {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 150px;
+  margin-bottom: 2rem; /* 画像とボタンの間隔を設定 */
+  width: 250px; /* アイコンの幅を調整 */
+  height: auto; /* アイコンの高さを自動調整 */
+  border-radius: 15px; /* 丸みのサイズを調整してください */
 }
 
-.title3 {
-  position: fixed;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.btn.btn-outline-primary.title3 {
+  font-size: 1.5rem !important; /* フォントサイズを大きく */
+  padding: .70rem 2rem !important; /* パディングを増やす */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important; /* より顕著な影を追加 */
+  transition: all 0.3s ease !important; /* 背景色と変形のアニメーション */
+}
+
+.btn.btn-outline-primary.title3:hover, 
+.btn.btn-outline-primary.title3:focus {
+  background-color: #2890ff !important; /* 濃い青色に変化 */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3) !important; /* より大きな影を追加 */
+  transform: translateY(-3px) !important; /* クリック時に上に移動 */
 }

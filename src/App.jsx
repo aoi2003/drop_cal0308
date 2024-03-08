@@ -4,6 +4,8 @@ import Title from './Components/Title';
 import Main from './Components/MainScreen';
 import Sub from './Components/SubScreen';
 import Set from './Components/SetScreen';
+import 'bootstrap/dist/css/bootstrap.min.css';//bootstrapを追加
+
 
 import './Components/NavigationBar.css';
 import './Components/Title.css';
@@ -23,8 +25,12 @@ function App() {
       {activePage === 'main' && <Main setActivePage={setActivePage} setDate={setDate} />}
       {activePage === 'sub' && <Sub setActivePage={setActivePage} date={date} />}
       {activePage === 'set' && <Set setActivePage={setActivePage} />}
+
+      
+
     </>
   );
 }
+
 
 export default App;
